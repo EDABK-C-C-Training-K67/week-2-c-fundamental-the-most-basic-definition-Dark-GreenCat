@@ -1,16 +1,11 @@
-#include<stdio.h>
-#include<string.h>
+#include <stdio.h>
 
-int main(){
+int main() {
     int a = 4;
     float b = 3.14;
     char c = 97;
     unsigned short d = 128;
-    char string[]="Hello World!";
-    printf("%d\n",a);
-    printf("%f\n",b);
-    printf("%c\n",c);
-    printf("%hd\n",d);
-    printf("%[^\n]",string);
-    return 0;
+    char str[] = "Hello World!";
+
+    printf("%d\n%.4f\n%c\n%hu\n%s", a, b, c, d, str);
 }
